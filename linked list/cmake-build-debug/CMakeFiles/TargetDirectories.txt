@@ -1,0 +1,3 @@
+C:/Users/Mariusz/Desktop/2 sem/AiSD/linked list/cmake-build-debug/CMakeFiles/linked_list.dir
+C:/Users/Mariusz/Desktop/2 sem/AiSD/linked list/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Mariusz/Desktop/2 sem/AiSD/linked list/cmake-build-debug/CMakeFiles/rebuild_cache.dir
