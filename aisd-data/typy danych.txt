@@ -1,5 +1,0 @@
-random;
-sorted;
-rev_sorted;
-A;
-V;
