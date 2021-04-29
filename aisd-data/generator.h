@@ -18,7 +18,7 @@ class generator
 {
 public:
 
-    constexpr static int N[7] = {100, 500, 1000, 5000, 10000, 50000, 100000};
+    constexpr static int N[10] = {5000, 10000, 15000, 20000, 25000, 30000, 35000, 40000, 45000, 50000};
     constexpr static const char* TYPES[5] = {"random", "sorted", "rev_sorted", "A", "V"};
 
     struct sequence

@@ -3,4 +3,4 @@ project(aisd_data)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(aisd_data main.cpp generator.h LinkedList.h BST.h)
+add_executable(aisd_data main.cpp generator.h LinkedList.h BST.h AVL.h)

@@ -5,10 +5,6 @@
 #ifndef AISD_DATA_LINKEDLIST_H
 #define AISD_DATA_LINKEDLIST_H
 
-#include <fstream>
-#include <iostream>
-#include <string>
-
 using namespace std;
 
 class LinkedList
@@ -28,24 +24,16 @@ public:
     void push(int x)
     {
         Node **wskadr = &head;
-        // &head to adres wskaźnika zawierającego adres głowy
-        // *pnode to adres głowy
-        // **pnode to wskaźnik na wskaźnik
 
-        // dopóki wskaźnik wskazuje na pusty adres (czyli początkowo head) oraz wartość pod tym adresem jest mniejsza niż x
         while( (*wskadr != nullptr) && ((*wskadr)->value) < x)
         {
-            //zwiększaj adres
             wskadr = &(*wskadr)->next;
         }
-        // np. pod wskaźnik *head wrzuć adres nowego węzła z wartościami {x, 0}
         *wskadr = new Node{x, *wskadr};
     }
 
     void print()
     {
-        // ustawianie koloru konsoli
-
         Node *wskadr = head;
         if(wskadr == nullptr)
         {
@@ -78,16 +66,15 @@ public:
         return false;
     }
 
-
     void remove(int x)
     {
-        Node **cur = &head;
-        while(*cur && (**cur).value != x)
+        Node **wskadr = &head;
+        while(*wskadr && (**wskadr).value != x)
         {
-            cur = &(**cur).next;
+            wskadr = &(**wskadr).next;
         }
-        Node *tmp = *cur;
-        *cur = (**cur).next;
+        Node *tmp = *wskadr;
+        *wskadr = (**wskadr).next;
         delete tmp;
     }
 
