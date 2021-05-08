@@ -135,7 +135,7 @@ public:
             *cur = (**cur).left;
             delete tmp;
         }
-        else if( (**cur).right != nullptr && (**cur).right != nullptr )
+        else if( (**cur).right != nullptr && (**cur).left != nullptr )
         {
             int left_max = local_max((**cur).left);
             remove(left_max);
